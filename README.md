@@ -9,6 +9,14 @@ Data Preprocessing: Processes MAESTRO dataset audio and MIDI files into PyTorch-
 Web Application: Django-based interface for uploading audio files and viewing generated music sheets.
 Real-Time Transcription: Try it yourself with our Jupyter notebook for real-time AMT.
 
+![image](https://github.com/user-attachments/assets/acea78ac-900c-4903-94f1-92db87e11557)
+![image](https://github.com/user-attachments/assets/dc546cfd-4659-45c1-bd9e-5c150a727471)
+![image](https://github.com/user-attachments/assets/cc1a7da1-c1b2-4a0d-b934-42b286a98b4f)
+![image](https://github.com/user-attachments/assets/a43cbdf2-29ca-4fc9-be1a-8dc87bb6c7a7)
+
+
+
+
 ## Installation
 To set up the project locally, follow these steps:
 
