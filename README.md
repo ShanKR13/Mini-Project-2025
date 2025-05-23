@@ -37,7 +37,7 @@ Download and install LilyPond.
 Update the lilypondPath in Try_it_Yourself/AMT_using_CR_GCN_Final_Real_Time.ipynb to your LilyPond executable path.
 
 
-Download MAESTRO Dataset:Download the MAESTRO v2.0.0 dataset is the one that we used if you wnat to retrain
+Download MAESTRO Dataset:Download the MAESTRO v2.0.0 dataset is the one that we used if you want to retrain
 
 
 ## Usage
@@ -57,7 +57,7 @@ python manage.py runserver
 
 Access the application at http://localhost:8000 and upload .wav files to generate music sheets.
 
-You can check through this in detail inside the 2nd Review Trainign codes under data-preprocessing-and-visualization.ipynb and amt-using-cr-gcn-f1-score-85-highest.ipynb for training details.
+You can check through this in detail inside the 2nd Review Training codes Folder under data-preprocessing-and-visualization.ipynb and amt-using-cr-gcn-f1-score-85-highest.ipynb for training details.
 
 Try It Yourself!:To experience real-time transcription, navigate to the Try_it_Yourself folder and open the AMT_using_CR_GCN_Final_Real_Time.ipynb notebook in Google Colab:
 
