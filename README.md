@@ -13,7 +13,7 @@ Real-Time Transcription: Try it yourself with our Jupyter notebook for real-time
 To set up the project locally, follow these steps:
 
 Clone the Repository:
-git clone https://github.com/your-username/AMT_using_CR_GCN.git
+git clone https://github.com/SelvaKarthik01/AMT_using_CR_GCN.git
 cd AMT_using_CR_GCN
 
 
