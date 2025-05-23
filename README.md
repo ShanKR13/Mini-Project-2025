@@ -1,4 +1,4 @@
-## Deep Learning Based Automatic Music Transcription using CR-GCN
+# Deep Learning Based Automatic Music Transcription using CR-GCN
 # Overview
 This project implements an enhanced Channel Relationship-Based Graph Convolutional Network (CR-GCN) for Automatic Music Transcription (AMT) of polyphonic piano recordings. The model combines Convolutional Neural Networks (CNNs) for spatial feature extraction, Bidirectional Long Short-Term Memory (BiLSTM) for temporal modeling, and Graph Convolutional Networks (GCNs) to capture note interdependencies. Trained and evaluated on the MAESTRO v2.0.0 dataset, the model achieves a frame-level F1-score of 0.8588, demonstrating competitive performance in transcribing complex polyphonic music into MIDI files and generating music sheets.
 The project includes a web application built with Django, allowing users to upload .wav audio files and receive corresponding music sheets. The transcription pipeline leverages music21 and LilyPond for sheet music generation, with preprocessing and feature extraction optimized for real-time applications.
@@ -9,8 +9,11 @@ Data Preprocessing: Processes MAESTRO dataset audio and MIDI files into PyTorch-
 Web Application: Django-based interface for uploading audio files and viewing generated music sheets.
 Real-Time Transcription: Try it yourself with our Jupyter notebook for real-time AMT.
 
+## Architecture 
 ![image](https://github.com/user-attachments/assets/acea78ac-900c-4903-94f1-92db87e11557)
+# Website
 ![image](https://github.com/user-attachments/assets/dc546cfd-4659-45c1-bd9e-5c150a727471)
+# Sample Screenshots of Try it Yourself !
 ![image](https://github.com/user-attachments/assets/cc1a7da1-c1b2-4a0d-b934-42b286a98b4f)
 ![image](https://github.com/user-attachments/assets/a43cbdf2-29ca-4fc9-be1a-8dc87bb6c7a7)
 
