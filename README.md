@@ -66,7 +66,7 @@ Important: This notebook is optimized for Google Colab to leverage its computati
 
 
 
-## Try It Yourself!
+# Try It Yourself!
 Want to transcribe your own audio? Check out the Try_it_Yourself folder in this repository! We’ve provided a Jupyter notebook, AMT_using_CR_GCN_Final_Real_Time.ipynb, that allows you to upload a .wav file and generate its music sheet in real time. For the best experience, run this notebook in Google Colab to ensure all dependencies (e.g., music21, LilyPond) work seamlessly. Follow the instructions in the notebook to upload your audio and visualize the transcribed music sheet.
 Base Paper Reference
 This project builds upon the work in:
@@ -87,7 +87,7 @@ Implement bidirectional data exchange in the web application for seamless MIDI a
 
 ## Acknowledgments
 We thank SASTRA Deemed to be University, our guide Dr. Emily Jenifer A, and the MAESTRO dataset creators for their support and resources.
-# Team Members :
+## Team Members :
 Selva Karthik S
 Shantosh Kumar R
 Rithvik L
