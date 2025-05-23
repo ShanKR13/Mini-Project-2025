@@ -59,7 +59,7 @@ Access the application at http://localhost:8000 and upload .wav files to generat
 
 You can check through this in detail inside the 2nd Review Training codes Folder under data-preprocessing-and-visualization.ipynb and amt-using-cr-gcn-f1-score-85-highest.ipynb for training details.
 
-Try It Yourself!:To experience real-time transcription, navigate to the Try_it_Yourself folder and open the AMT_using_CR_GCN_Final_Real_Time.ipynb notebook in Google Colab:
+Try It Yourself!:To experience real-time transcription, navigate to the Try it Yourself! folder and open the AMT_using_CR_GCN_Final_Real_Time.ipynb notebook in Google Colab:
 
 Upload a .wav file and run the notebook to generate MIDI files and music sheets.
 Important: This notebook is optimized for Google Colab to leverage its computational resources and dependencies. Ensure you have a Google account and access to Colab.
