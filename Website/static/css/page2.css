@@ -1,0 +1,83 @@
+/* General body styling */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Arrange elements vertically */
+}
+html, body {
+    height: 100%; /* Full height for the viewport */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #05293b; /* Blue background */
+    padding: 20px 20px;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Space between title and buttons */
+    align-items: center; /* Center content vertically */
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+/* Content styling - Centered content between navbar and footer */
+.content {
+    text-align: center;
+    flex-grow: 1; /* Allow content to expand and fill available space */
+    display: flex; /* Flexbox for centering content vertically and horizontally */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+h2 {
+    font-size: clamp(18px, 4vw, 24px); /* Responsive font size using clamp() */
+    color: #333;
+}
+
+.content h2 {
+    margin-bottom: 20px; /* Move text upwards by reducing space below */
+    margin-top: -10px; /* Optional: Fine-tune upward movement */
+}
+
+/* Footer styling (Sticky Footer) */
+footer {
+    background-color: #05293b; /* Blue footer */
+    color:snow;
+    font-family: Verdana, sans-serif;
+    text-align:center
+}
+
+
+#heart {
+    color:#99032c; 
+    font-size: 20px;
+}
+/* Responsive Design Using Media Queries */
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 20px; /* Smaller font for title on mobile screens */
+        text-align:center
+        margin-bottom:auto
+}
+.content h2 {
+        margin-bottom: 15px; /* Reduce margin for smaller screens */
+        margin-top: -5px; /* Adjust upward movement for responsiveness */
+    }
+    
+    body {
+        background-size: cover; /* Use 'cover' for smaller screens to fill space */
+        background-color: #ffffff; /* Change fallback color if needed */
+    }
+}

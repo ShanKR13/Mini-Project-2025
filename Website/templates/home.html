@@ -1,0 +1,80 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'icons/favicon.ico' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/page1.css' %}"/>
+<style>
+        body {
+            background-image: url("{% static 'images/gstudio.jpeg' %}");
+             background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Polyphonic Piano Transcription</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Upload Your Files To Our Server</h2>
+        <form method="post" action="upload/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" id="myfile" name="myfile" multiple hidden />
+            <label for="myfile" class="custom-file-label">SELECT YOUR UPLOAD</label><br>
+            <span id="file-name-display"></span>
+            <br /><br />
+            <input type="submit" value="Upload File" />
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+       <p id="foot1">
+    Crafted with<span id="heart"> ❤ </span>at SOC
+  </p>
+    </footer>
+
+<script>
+
+// Function to handle file selection and display file name
+function updateFileNameDisplay() {
+    const fileInput = document.getElementById('myfile');
+    const fileNameDisplay = document.getElementById('file-name-display');
+
+    // Add an event listener to detect when a file is selected
+    fileInput.addEventListener('change', function(event) {
+        const files = event.target.files;
+
+        if (files.length > 1) {
+            // If multiple files are selected, show the number of files
+            fileNameDisplay.textContent = `${files.length} files selected`;
+        } else if (files.length === 1) {
+            // Display the name of the single selected file
+            fileNameDisplay.textContent = files[0].name;
+        } else {
+            // If no file is selected, show placeholder text
+            fileNameDisplay.textContent = 'No file selected';
+        }
+    });
+
+    // Initialize the display to "No file selected" when the page loads
+    fileNameDisplay.textContent = 'No file selected';
+}
+
+// Call the function on page load
+updateFileNameDisplay();
+
+</script>
+</body>
+</html>
+

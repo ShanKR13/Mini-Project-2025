@@ -1,0 +1,37 @@
+librosa - to convert .wav file to mel spectogram
+pretty-midi -  to convert .midi to piano roll
+midi- contains info about each audio played like json
+sample rate = 16000 hertz - no. of samples per second
+hop length = 512 gap between two overlapping sample windows in 1 frame
+fft - 1 frame has = 2048 samples = 32 ms 
+n_mels - spectorgram bin 229 mel bins
+pithces- note
+segemtn length = 480 frames
+preporcessing
+.wav to mespectro
+midi to piano roll
+total 4800 frames means 10 segments where 1 segment has 480 frames
+1276 audio files in maestro v3 120gb
+
+feature learning
+cnn input = 480 x 229 .mel spectrogram
+cnn output is feature map 480 x 768
+its passed as input to bidirectional lstm - 128 units
+output of lstm is passed to sigmoid layer to multilabel classification
+cnn output - feature (map) extraction
+lstm output - feature map(input of lstm is cnn output)
+padding and trimming
+
+for input to gcn
+from piano roll, we make note activation (how many timees a note is pressed) , pearson correlation matrix (interdependency), optimal thershold (>threshold - add edge in graph from the nodes)
+
+adjacency matrix is input of gcn (88 x88 matrix)
+3 stacked layer gcn
+focal loss prevents class imbalance (overfitting)
+
+
+before reg-48 epochs
+after reg- 88 epochs
+
+focal loss prevents class imbalance by focussing on hard examples
+l2 regularization prevents overfitting by penalties

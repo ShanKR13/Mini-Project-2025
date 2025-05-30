@@ -1,0 +1,47 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'icons/favicon.ico' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/page2.css' %}"/>
+<style>
+        body {
+            background-image: url("{% static 'images/gstudio.jpeg' %}");
+             background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Polyphonic Piano Transcription</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>File Uploaded Successfully</h2>
+        <!--<form method="post" action="upload/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" id="myfile" name="myfile" multiple hidden />
+            <label for="myfile" class="custom-file-label">SELECT YOUR UPLOAD</label><br>
+            <span id="file-name-display"></span>
+            <br /><br />
+            <input type="submit" value="Upload File" />
+        </form>-->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+       <p id="foot1">
+    Crafted with<span id="heart"> ❤ </span>at SOC
+  </p>
+    </footer>
+    </body>
+</html>
